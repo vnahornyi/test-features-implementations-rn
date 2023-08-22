@@ -5,12 +5,13 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "pod-install": "cd ios & pod install & cd ../",
+    "pod-install": "cd ios && pod install && cd ..",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
     "lingui:extract": "lingui extract",
-    "lingui:compile": "lingui compile --typescript"
+    "lingui:compile": "lingui compile --typescript",
+    "create-apk": "cd android && ./gradlew assembleRelease && cd .."
   },
   "dependencies": {
     "@lingui/react": "^4.4.0",
